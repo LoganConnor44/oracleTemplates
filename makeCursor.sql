@@ -1,0 +1,9 @@
+DECLARE
+	CURSOR name_of_cursor IS
+		SELECT DISTINCT COLUMN_NAME_HERE
+		FROM TABLE_NAME_HERE;
+BEGIN
+	FOR individual_item IN name_of_cursor LOOP
+		DBMS_OUTPUT.PUT_LINE(individual_item.COLUMN_NAME_HERE);
+	END LOOP;
+END;
